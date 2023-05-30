@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Decoder</title>
+</head>
+<body>
+    <div id="header">
+ 
+            <div id="header-text">
+            CoDecoder
+            </div>
+
+    </div>
+    <main>
+        <div class="contenedor" id="original">
+            <textarea name="First" id="First"></textarea>
+            <svg version='1.1' baseProfile='full' width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+                <circle id="copyfirst" cx='50' cy='50' r='30' style='fill:yellow;' stroke="black" stroke-width="5"/>
+            </svg>
+        </div>
+        <div class="contenedor" id="transicion">
+            <svg version='1.1' baseProfile='full' width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+                <circle cx='50' cy='50' r='60' style='fill:black;' id="grande"/>
+                <!--M50 10 A 20 20 0 0 1 50 50 A 20 20 0 0 0 50 90 A 40 40 0 0 0 50 10-->
+                <circle cx='50' cy='30' r='10.5' id="blanco" style='fill:white;'/>
+                <circle cx='50' cy='70' r='10.5' id="rojo" style='fill:red;'/>
+                <circle cx='30' cy='50' r='10.5' id="verde" style='fill:green;'/>
+                <circle cx='70' cy='50' r='10.5' id="azul" style='fill:blue;'/>
+              </svg>
+        </div>
+        <div class="contenedor" id="traduccion">
+            <textarea name="Second" id="Second"></textarea>
+            <svg version='1.1' baseProfile='full' width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'>
+                <circle id="copy" cx='50' cy='50' r='30' style='fill:purple;' stroke="black" stroke-width="5"/>
+            </svg>
+        </div>
+    </main>
+    
+</body>
+</html>
